@@ -1,5 +1,7 @@
 @import url(./fonts.css);
 
+/* CUSTOM PROPS */
+
 :root {
     --primary-orange: #F18128;
     --secondary-white: #fff;
@@ -10,6 +12,8 @@
     --Roboto: "Roboto";
 }
 
+
+/* GLOBAL STYLES */
 
 *,
 *::before,
@@ -27,6 +31,7 @@ ul {
     list-style: none;
 }
 
+/* SCROLL */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -38,9 +43,7 @@ ul {
     height: 5px;
     background-color: var(--primary-orange);
 }
-
-
-
+/* CONTAINER */
 .container {
     max-width: 1143px;
     width: 100%;
@@ -48,6 +51,7 @@ ul {
     padding-right: 15px;
     margin: auto;
 }
+/* BTN */
 .all-btn {
     display: inline-block;
     max-width: 166px;
@@ -72,6 +76,8 @@ ul {
     cursor: pointer;
 }
 
+
+/* TITLE */
 .title {
     color: var(--primary-orange);
     font-family: var(--Comfortaa);
@@ -88,6 +94,7 @@ body {
 }
 
 
+/* SITE-ADS */
 .site-ads {
     display: block;
     background: linear-gradient(90deg, #0031AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
@@ -99,7 +106,6 @@ body {
     color: var(--secondary-white);
     column-gap: 24px;
 }
-
 .ads-text {
     max-width: 166px;
     width: 100%;
@@ -108,17 +114,15 @@ body {
     font-weight: 400;
 
 }
-.site-header-veb{
-    background: var(--dark-blue);
-    width: 100%;
-    height: 100px;
-}
+/* SITE-ADS */
+
+/* SITE-HEADER */
+
 .site-header {
     width: 100%;
-    max-height: 100px;
     background: #000000b0;
     backdrop-filter: blur(7.5px);
-    position: fixed;
+    /* position: fixed; */
     z-index: 99;
    
 }
@@ -158,7 +162,7 @@ body {
     position: relative;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: var(--links-orange);
 }
 
@@ -178,6 +182,9 @@ body {
     width: 100%;
 }
 
+/* SITE-HEADER */
+
+/* SITE-HERO */
 .site-hero {
     width: 100%;
     height: 640px;
@@ -221,6 +228,11 @@ body {
     display: flex;
     column-gap: 30px;
 }
+
+/* SITE-HERO */
+
+
+/* FILMS-SECTION */
 
 .films {
     padding-top: 60px;
@@ -296,6 +308,7 @@ body {
     margin-top: 12px;
 }
 
+/* HOVER */
 .films-card__content:hover {
     cursor: pointer;
 }
@@ -306,7 +319,9 @@ body {
 .films-card__content:hover .films-card__time {
     transform: scale(0);
 }
+/* FILMS-SECTION */
 
+/* PRIMIERS SECTION */
 .primiers {
     position: relative;
     height: 500px;
@@ -342,6 +357,12 @@ body {
     font-weight: 400;
     line-height: 27px;
 }
+
+
+/* PRIMIERS SECTION */
+
+
+/* COLLECTIONS SECTION */
 
 .collections {
     padding-top: 60px;
@@ -389,6 +410,7 @@ body {
 }
 
 
+/* ANIMATION */
 .collections-card__content::before {
     content: url(../img/Выбрать.png);
     position: absolute;
@@ -415,6 +437,10 @@ body {
     transform: scale(1.4);
 }
 
+/* COLLECTIONS SECTION */
+
+
+/* SERIES SECTION */
 .series {
     margin-bottom: 65px;
 }
@@ -481,6 +507,7 @@ body {
 }
 .series-item {
     min-height: 183px;
+    
 }
 .series-md__image {
     position: absolute;
@@ -488,6 +515,8 @@ body {
     left: 0;
     object-fit: cover;
     z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 .series-content {
     width: 100%;
@@ -514,18 +543,20 @@ body {
     position: relative;
     grid-row: span 1;
     grid-column: span 1;
+    border-radius: 6px;
+    overflow: hidden;
     
 }
 
+/* SERIES SECTION */
+
+/* SITE-FOOTER */
 
 .site-footer {
     background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
-
-
 .footer-info {
     display: flex;
     align-items: center;
@@ -536,7 +567,6 @@ body {
     column-gap: 50px;
     align-items: center;
 }
-
 .footer-text {
     color: var(--secondary-white);
     font-family: var(--Comfortaa);
@@ -544,3 +574,4 @@ body {
     font-weight: 700;
     letter-spacing: 0.18px;
 }
+/* SITE-FOOTER */
